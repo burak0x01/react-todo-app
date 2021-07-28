@@ -1,0 +1,24 @@
+.alert {
+    width: 600px;
+    min-height: 80px;
+    border-radius: 20px;    
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    color: #FFF;
+    font-size: 17px;
+
+    &.warning {
+        background-color: rgba($color: #FFF59D, $alpha: .5);
+    }
+
+    &.danger {
+        background-color: rgba($color: #FF8A65, $alpha: .5);
+    }
+
+    &.success {
+        background-color: rgba($color: #D4E157, $alpha: .5);
+    }
+}

@@ -1,0 +1,45 @@
+.todo-item {
+    width: 600px;
+    min-height: 80px;
+    border-radius: 20px;
+    background-color: rgba($color: #FFF, $alpha: .1);
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+
+    &.marked {
+        background-color: rgba($color: #D4E157, $alpha: .5);
+    }
+
+    .todo {         
+        width: 450px;
+        // normalde alt satıra geçmesi lazım ama bu aralarında boşluk olan cümleler için
+        // boşluk yoksa bunu kullan
+        word-wrap: break-word;
+        cursor: pointer;
+
+        p {
+            color: #FFF;
+            line-height: 50px;                  
+        }
+    }
+
+    .action {        
+        background-color: rgba($color: #FE0000, $alpha: .15);               
+        border-radius: 60px;   
+        display: flex;
+        justify-content: center;
+        align-items: center;     
+        
+        a {
+            height: 60px;
+            width: 85px;
+            line-height: 60px;
+            text-align: center;
+            text-decoration: none;
+            color: #FFF;            
+        }
+    }
+}
